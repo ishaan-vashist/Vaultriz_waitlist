@@ -1,0 +1,57 @@
+/* Waitlist Section */
+.waitlist-section {
+    background: linear-gradient(135deg, #141414 0%, #282828 100%);
+    margin-top: 70px; /* Adjusted for fixed navbar */
+}
+
+.waitlist-section h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #00d1ff;
+}
+
+.text-light-subtle {
+    color: rgba(241, 241, 241, 0.8);
+}
+
+.form-control {
+    padding: 12px;
+    border-radius: 50px;
+    font-size: 1rem;
+}
+
+.btn-gradient {
+    background: linear-gradient(90deg, #00d1ff, #00ffab);
+    border: none;
+    padding: 12px 36px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-gradient:hover {
+    background-color: #00ffab;
+}
+
+/* Animations */
+.animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Form Styling */
+.bg-dark-transparent {
+    background: rgba(27, 27, 27, 0.7);
+    border-radius: 20px;
+}
+
+.shadow-lg {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}

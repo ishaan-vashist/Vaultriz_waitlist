@@ -1,0 +1,260 @@
+/* General Styling */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #121212;
+    color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(27, 27, 27, 0.85);
+    padding: 15px 0;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #00d1ff;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;  /* Adds space between each nav item */
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    color: #f1f1f1 !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00d1ff !important;
+}
+
+.navbar-nav .btn {
+    background: linear-gradient(90deg, #00d1ff, #00ffab);
+    border: none;
+    padding: 10px 24px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .btn:hover {
+    background-color: #00ffab;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #1b1b1b 0%, #000000 100%);
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-section h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #00d1ff;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.text-glow {
+    color: #00d1ff;
+    text-shadow: 0 0 20px #00d1ff, 0 0 30px #00d1ff;
+}
+
+.hero-section .btn {
+    font-size: 1.2rem;
+    padding: 12px 36px;
+    background: linear-gradient(90deg, #00d1ff, #00ffab);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-section .btn:hover {
+    background-color: #00ffab;
+}
+
+/* Features Section */
+#features {
+    padding: 80px 20px;
+    background-color: #1b1b1b;
+}
+
+#features h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #00d1ff;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.feature-box {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    border-image: linear-gradient(to right, #00d1ff, #00ffab) 1;
+}
+
+.icon i {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.text-glow-primary {
+    color: #00d1ff;
+    text-shadow: 0 0 15px #00d1ff;
+}
+
+.text-glow-success {
+    color: #00ffab;
+    text-shadow: 0 0 15px #00ffab;
+}
+
+.text-glow-danger {
+    color: #ff5757;
+    text-shadow: 0 0 15px #ff5757;
+}
+
+/* About Us Section */
+#about {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+#about h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #00d1ff;
+    text-align: center;
+}
+
+.about-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+#about h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#about p.lead {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Enhanced Waitlist Section */
+#waitlist {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1b1b1b 0%, #282828 100%);
+    color: #fff;
+    text-align: center;
+}
+
+.bg-waitlist-gradient {
+    background-image: url('waitlist-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+#waitlist h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #00d1ff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#waitlist form input[type="email"] {
+    padding: 12px;
+    border-radius: 50px;
+    background-color: rgba(222, 209, 209, 0.8);
+    color: #fff;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+#waitlist form input[type="email"]:focus {
+    border-color: #00d1ff;
+}
+
+#waitlist form button {
+    border-radius: 50px;
+    background-color: #00d1ff;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#waitlist form button:hover {
+    background-color: #00ffab;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #f1f1f1;
+    padding: 40px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #f1f1f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #00d1ff;
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Waitlist - Vaultriz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: url('background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #f1f1f1;
+            overflow-x: hidden;
+            padding-top: 70px; /* Adjust for the fixed navbar */
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar-brand {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 600;
+            color: #00d1ff;
+        }
+
+        .navbar-nav .nav-link {
+            margin-right: 20px;
+            color: #f1f1f1 !important;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #00d1ff !important;
+        }
+
+        /* Full Page Background Effect */
+        .waitlist-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, rgba(20, 20, 20, 0.8), rgba(40, 40, 40, 0.8));
+        }
+
+        /* Form Styling */
+        .waitlist-form {
+            background: rgba(0, 0, 0, 0.75);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .waitlist-form h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: #00d1ff;
+            text-align: center;
+        }
+
+        .form-control {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            padding: 12px 20px;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border: 2px solid #00d1ff;
+        }
+
+        .form-label {
+            color: #f1f1f1;
+        }
+
+        .btn-gradient {
+            background: linear-gradient(90deg, #00d1ff, #00ffab);
+            padding: 12px 36px;
+            border: none;
+            border-radius: 50px;
+            color: #fff;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .btn-gradient:hover {
+            background: linear-gradient(90deg, #00ffab, #00d1ff);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            transform: translateY(-5px);
+        }
+
+        /* Glowing Border Effect */
+        .waitlist-form:hover {
+            border: 1px solid rgba(0, 209, 255, 0.6);
+        }
+
+        .text-light-subtle {
+            color: rgba(241, 241, 241, 0.8);
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Vaultriz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#waitlist">Waitlist</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Waitlist Form Section -->
+    <section class="waitlist-section">
+        <div class="waitlist-form animate-fade-in">
+            <h2>Join the Vaultriz Waitlist</h2>
+            <p class="text-center text-light-subtle mb-4">Be the first to experience the benefits of Vaultriz. Sign up now!</p>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="platform" class="form-label">Preferred Gaming Platform</label>
+                    <select class="form-select form-control" id="platform" required>
+                        <option selected disabled>Choose your platform...</option>
+                        <option>Steam</option>
+                        <option>Epic Games</option>
+                        <option>PlayStation</option>
+                        <option>Xbox</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-gradient">Join Waitlist</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Vaultriz. All Rights Reserved.</p>
+            <p><a href="privacy.html" class="text-white">Privacy Policy</a> | <a href="terms.html" class="text-white">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
