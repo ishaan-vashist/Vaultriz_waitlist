@@ -2,6 +2,7 @@
 
 ## Overview
 Vaultriz Waitlist is a web-based signup and landing page for users interested in joining the Vaultriz platform. It provides an interface for early access registration and is designed to be deployed using Docker and AWS EC2.
+To visit:http://ec2-16-171-1-241.eu-north-1.compute.amazonaws.com/index.html
 
 ## Features
 - Landing page (`index.html`)
